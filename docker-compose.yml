@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  webapp: 
+    container_name: container_app
+    restart: always
+    build: .
+    ports:
+      - "5000:3000"
+    links:
+      - database
+  database:
+    container_name: contenedor_db
+    image: mongo
+    restart: always
+    build: .
+    ports:
+      - "27019:27017"
