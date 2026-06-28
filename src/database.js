@@ -1,16 +1,7 @@
-// ENV PROD
-/*const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://database/mydatabase")
-    .then(db=>console.log("DB is connected to", db.connection.host))
-    .catch(err=>console.error(err));
-*/
+const mongoUri = process.env.MONGO_URI || "mongodb://localhost:27017/aurafarma_db";
 
-
-// ENV DEV
-
-const mongoose = require("mongoose");   
-
-mongoose.connect("mongodb://localhost:27017/aurafarma_db")
-    .then(db=>console.log("DB is connected to", db.connection.host))
-    .catch(err=>console.error(err));
+mongoose.connect(mongoUri)
+    .then((db) => console.log("DB is connected to", db.connection.host))
+    .catch((err) => console.error(err));

@@ -209,8 +209,8 @@ function buildOpenApiSpec() {
         },
         servers: [
             {
-                url: "http://localhost:3000",
-                description: "Servidor local"
+                url: "/",
+                description: "Servidor actual"
             }
         ],
         tags: [

@@ -1,18 +1,18 @@
-version: '3'
-
 services:
-  webapp: 
+  webapp:
     container_name: aurafarma_app
     restart: always
     build: .
+    environment:
+      MONGO_URI: mongodb://database:27017/aurafarma_db
     ports:
       - "5000:3000"
-    links:
+    depends_on:
       - database
+
   database:
     container_name: aurafarma_db
     image: mongo
     restart: always
-    build: .
     ports:
       - "27019:27017"
