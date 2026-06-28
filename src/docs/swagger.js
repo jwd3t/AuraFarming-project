@@ -10,7 +10,7 @@ function registerSwagger(app) {
         res.json(spec);
     });
 
-    app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(spec));
+    app.use("/swagger", swaggerUi.serve, swaggerUi.setup(spec));
 }
 
 function buildOpenApiSpec() {
