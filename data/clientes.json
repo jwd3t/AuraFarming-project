@@ -1,0 +1,212 @@
+[
+  {
+    "id_cliente": 1,
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "nombre_completo": "Juan Perez",
+    "email": "juan.perez@gmail.com",
+    "telefono": "987654321",
+    "direcciones": {
+      "id_direccion": 1,
+      "direccion": "Av. Arequipa 123",
+      "distrito": "Lima",
+      "referencia": "Cerca a un banco"
+    }
+  },
+  {
+    "id_cliente": 2,
+    "nombre": "Maria",
+    "apellido": "Lopez",
+    "nombre_completo": "Maria Lopez",
+    "email": "maria.lopez@gmail.com",
+    "telefono": "912345678",
+    "direcciones": {
+      "id_direccion": 2,
+      "direccion": "Jr. Los Olivos 456",
+      "distrito": "San Martín de Porres",
+      "referencia": "Frente a parque"
+    }
+  },
+  {
+    "id_cliente": 3,
+    "nombre": "Juan",
+    "apellido": "Ramirez",
+    "nombre_completo": "Juan Ramirez",
+    "email": "carlos.ramirez@gmail.com",
+    "telefono": "923456789",
+    "direcciones": {
+      "id_direccion": 3,
+      "direccion": "Av. Brasil 789",
+      "distrito": "Jesús María",
+      "referencia": "Al costado de farmacia"
+    }
+  },
+  {
+    "id_cliente": 4,
+    "nombre": "Ana",
+    "apellido": "Torres",
+    "nombre_completo": "Ana Torres",
+    "email": "ana.torres@gmail.com",
+    "telefono": "934567890",
+    "direcciones": {
+      "id_direccion": 4,
+      "direccion": "Calle Las Flores 321",
+      "distrito": "Miraflores",
+      "referencia": "Edificio azul"
+    }
+  },
+  {
+    "id_cliente": 5,
+    "nombre": "Luis",
+    "apellido": "Gomez",
+    "nombre_completo": "Luis Gomez",
+    "email": "luis.gomez@gmail.com",
+    "telefono": "945678901",
+    "direcciones": {
+      "id_direccion": 5,
+      "direccion": "Av. Universitaria 654",
+      "distrito": "Comas",
+      "referencia": "Frente a colegio"
+    }
+  },
+  {
+    "id_cliente": 6,
+    "nombre": "Sofia",
+    "apellido": "Castro",
+    "nombre_completo": "Sofia Castro",
+    "email": "sofia.castro@gmail.com",
+    "telefono": "956789012",
+    "direcciones": {
+      "id_direccion": 6,
+      "direccion": "Jr. Lima 987",
+      "distrito": "Callao",
+      "referencia": "Cerca al mercado"
+    }
+  },
+  {
+    "id_cliente": 7,
+    "nombre": "Diego",
+    "apellido": "Vargas",
+    "nombre_completo": "Diego Vargas",
+    "email": "diego.vargas@gmail.com",
+    "telefono": "967890123",
+    "direcciones": {
+      "id_direccion": 7,
+      "direccion": "Av. Colonial 111",
+      "distrito": "Callao",
+      "referencia": "Al lado de grifo"
+    }
+  },
+  {
+    "id_cliente": 8,
+    "nombre": "Lucia",
+    "apellido": "Rojas",
+    "nombre_completo": "Lucia Rojas",
+    "email": "lucia.rojas@gmail.com",
+    "telefono": "978901234",
+    "direcciones": {
+      "id_direccion": 8,
+      "direccion": "Calle Los Pinos 222",
+      "distrito": "Surco",
+      "referencia": "Casa blanca"
+    }
+  },
+  {
+    "id_cliente": 9,
+    "nombre": "Pedro",
+    "apellido": "Diaz",
+    "nombre_completo": "Pedro Diaz",
+    "email": "pedro.diaz@gmail.com",
+    "telefono": "989012345",
+    "direcciones": {
+      "id_direccion": 9,
+      "direccion": "Av. Benavides 333",
+      "distrito": "Miraflores",
+      "referencia": "Frente a tienda"
+    }
+  },
+  {
+    "id_cliente": 10,
+    "nombre": "Valeria",
+    "apellido": "Mendoza",
+    "nombre_completo": "Valeria Mendoza",
+    "email": "valeria.mendoza@gmail.com",
+    "telefono": "990123456",
+    "direcciones": {
+      "id_direccion": 10,
+      "direccion": "Jr. Amazonas 444",
+      "distrito": "La Victoria",
+      "referencia": "Cerca a hospital"
+    }
+  },
+  {
+    "id_cliente": 11,
+    "nombre": "Andres",
+    "apellido": "Silva",
+    "nombre_completo": "Andres Silva",
+    "email": "andres.silva@gmail.com",
+    "telefono": "901234567",
+    "direcciones": {
+      "id_direccion": 11,
+      "direccion": "Av. Grau 555",
+      "distrito": "Cercado de Lima",
+      "referencia": "Esquina"
+    }
+  },
+  {
+    "id_cliente": 12,
+    "nombre": "Camila",
+    "apellido": "Reyes",
+    "nombre_completo": "Camila Reyes",
+    "email": "camila.reyes@gmail.com",
+    "telefono": "912398765",
+    "direcciones": {
+      "id_direccion": 12,
+      "direccion": "Calle Comercio 666",
+      "distrito": "San Borja",
+      "referencia": "Edificio 2"
+    }
+  },
+  {
+    "id_cliente": 13,
+    "nombre": "Jorge",
+    "apellido": "Navarro",
+    "nombre_completo": "Jorge Navarro",
+    "email": "jorge.navarro@gmail.com",
+    "telefono": "923487654",
+    "direcciones": {
+      "id_direccion": 13,
+      "direccion": "Av. Angamos 777",
+      "distrito": "Surquillo",
+      "referencia": "Frente a restaurante"
+    }
+  },
+  {
+    "id_cliente": 14,
+    "nombre": "Fernanda",
+    "apellido": "Paredes",
+    "nombre_completo": "Fernanda Paredes",
+    "email": "fernanda.paredes@gmail.com",
+    "telefono": "934576543",
+    "direcciones": {
+      "id_direccion": 14,
+      "direccion": "Jr. Libertad 888",
+      "distrito": "San Miguel",
+      "referencia": "Casa verde"
+    }
+  },
+  {
+    "id_cliente": 15,
+    "nombre": "Ricardo",
+    "apellido": "Salazar",
+    "nombre_completo": "Ricardo Salazar",
+    "email": "ricardo.salazar@gmail.com",
+    "telefono": "945665432",
+    "direcciones": {
+      "id_direccion": 15,
+      "direccion": "Av. Faucett 999",
+      "distrito": "Callao",
+      "referencia": "Cerca al aeropuerto"
+    }
+  }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "id_pedido": 1,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "pendiente",
+    "cliente": {
+      "id_cliente": 1,
+      "nombre_completo": "Juan Perez",
+      "email": "juan.perez@gmail.com",
+      "telefono": "987654321"
+    },
+    "items": [
+      {
+        "id_detalle": 1,
+        "producto": {
+          "id_producto": 1,
+          "nombre": "Paracetamol 500mg",
+          "categoria": {
+            "id_categoria": 1,
+            "nombre": "Analgésicos"
+          },
+          "proveedor": {
+            "id_proveedor": 1,
+            "nombre": "Farmindustria S.A.",
+            "ruc": "20123456789"
+          }
+        },
+        "cantidad": 2,
+        "precio_unitario": 5.50,
+        "subtotal": 11.00
+      },
+      {
+        "id_detalle": 2,
+        "producto": {
+          "id_producto": 5,
+          "nombre": "Alcohol 70%",
+          "categoria": {
+            "id_categoria": 4,
+            "nombre": "Desinfectantes"
+          },
+          "proveedor": {
+            "id_proveedor": 5,
+            "nombre": "Distribuidora FarmaPlus",
+            "ruc": "20789123456"
+          }
+        },
+        "cantidad": 1,
+        "precio_unitario": 4.00,
+        "subtotal": 4.00
+      }
+    ],
+    "total_calculado": 15.0,
+    "pago": {
+      "id_pago": 1,
+      "monto": 25.50,
+      "estado": "pendiente",
+      "metodo": {
+        "id_metodo": 1,
+        "tipo": "Efectivo",
+        "descripcion": "Pago contra entrega"
+      }
+    }
+  },
+  {
+    "id_pedido": 2,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "pagado",
+    "cliente": {
+      "id_cliente": 2,
+      "nombre_completo": "Maria Lopez",
+      "email": "maria.lopez@gmail.com",
+      "telefono": "912345678"
+    },
+    "items": [
+      {
+        "id_detalle": 3,
+        "producto": {
+          "id_producto": 2,
+          "nombre": "Ibuprofeno 400mg",
+          "categoria": {
+            "id_categoria": 1,
+            "nombre": "Analgésicos"
+          },
+          "proveedor": {
+            "id_proveedor": 2,
+            "nombre": "Laboratorios Medix",
+            "ruc": "20456789123"
+          }
+        },
+        "cantidad": 1,
+        "precio_unitario": 7.80,
+        "subtotal": 7.80
+      },
+      {
+        "id_detalle": 4,
+        "producto": {
+          "id_producto": 6,
+          "nombre": "Vitamina C 1g",
+          "categoria": {
+            "id_categoria": 5,
+            "nombre": "Vitaminas"
+          },
+          "proveedor": {
+            "id_proveedor": 6,
+            "nombre": "Quimica Andina",
+            "ruc": "20891234567"
+          }
+        },
+        "cantidad": 2,
+        "precio_unitario": 6.50,
+        "subtotal": 13.00
+      }
+    ],
+    "total_calculado": 20.8,
+    "pago": {
+      "id_pago": 2,
+      "monto": 40.00,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 2,
+        "tipo": "Tarjeta",
+        "descripcion": "Crédito o débito"
+      }
+    }
+  },
+  {
+    "id_pedido": 3,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "enviado",
+    "cliente": {
+      "id_cliente": 3,
+      "nombre_completo": "Juan Ramirez",
+      "email": "carlos.ramirez@gmail.com",
+      "telefono": "923456789"
+    },
+    "items": [
+      {
+        "id_detalle": 5,
+        "producto": {
+          "id_producto": 3,
+          "nombre": "Amoxicilina 500mg",
+          "categoria": {
+            "id_categoria": 2,
+            "nombre": "Antibióticos"
+          },
+          "proveedor": {
+            "id_proveedor": 3,
+            "nombre": "SaludPharma SAC",
+            "ruc": "20567891234"
+          }
+        },
+        "cantidad": 1,
+        "precio_unitario": 12.50,
+        "subtotal": 12.50
+      },
+      {
+        "id_detalle": 6,
+        "producto": {
+          "id_producto": 4,
+          "nombre": "Jarabe para la tos",
+          "categoria": {
+            "id_categoria": 3,
+            "nombre": "Jarabes"
+          },
+          "proveedor": {
+            "id_proveedor": 4,
+            "nombre": "BioMedic Perú",
+            "ruc": "20678912345"
+          }
+        },
+        "cantidad": 1,
+        "precio_unitario": 9.90,
+        "subtotal": 9.90
+      }
+    ],
+    "total_calculado": 22.4,
+    "pago": {
+      "id_pago": 3,
+      "monto": 18.70,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 3,
+        "tipo": "Yape",
+        "descripcion": "Pago móvil"
+      }
+    }
+  },
+  {
+    "id_pedido": 4,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "entregado",
+    "cliente": {
+      "id_cliente": 4,
+      "nombre_completo": "Ana Torres",
+      "email": "ana.torres@gmail.com",
+      "telefono": "934567890"
+    },
+    "items": [
+      {
+        "id_detalle": 7,
+        "producto": {
+          "id_producto": 7,
+          "nombre": "Termómetro digital",
+          "categoria": {
+            "id_categoria": 6,
+            "nombre": "Equipos médicos"
+          },
+          "proveedor": {
+            "id_proveedor": 7,
+            "nombre": "MedSupply Perú",
+            "ruc": "20912345678"
+          }
+        },
+        "cantidad": 1,
+        "precio_unitario": 25.00,
+        "subtotal": 25.00
+      },
+      {
+        "id_detalle": 8,
+        "producto": {
+          "id_producto": 8,
+          "nombre": "Enjuague bucal",
+          "categoria": {
+            "id_categoria": 7,
+            "nombre": "Higiene oral"
+          },
+          "proveedor": {
+            "id_proveedor": 8,
+            "nombre": "PharmaLife",
+            "ruc": "20111222333"
+          }
+        },
+        "cantidad": 1,
+        "precio_unitario": 11.20,
+        "subtotal": 11.20
+      }
+    ],
+    "total_calculado": 36.2,
+    "pago": {
+      "id_pago": 4,
+      "monto": 60.00,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 4,
+        "tipo": "Plin",
+        "descripcion": "Pago móvil"
+      }
+    }
+  },
+  {
+    "id_pedido": 5,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "pendiente",
+    "cliente": {
+      "id_cliente": 5,
+      "nombre_completo": "Luis Gomez",
+      "email": "luis.gomez@gmail.com",
+      "telefono": "945678901"
+    },
+    "items": {
+      "id_detalle": 9,
+      "producto": {
+        "id_producto": 9,
+        "nombre": "Crema antibacterial",
+        "categoria": {
+          "id_categoria": 8,
+          "nombre": "Dermatológicos"
+        },
+        "proveedor": {
+          "id_proveedor": 9,
+          "nombre": "Global Farma",
+          "ruc": "20444555666"
+        }
+      },
+      "cantidad": 1,
+      "precio_unitario": 8.70,
+      "subtotal": 8.70
+    },
+    "total_calculado": 8.7,
+    "pago": {
+      "id_pago": 5,
+      "monto": 22.30,
+      "estado": "pendiente",
+      "metodo": {
+        "id_metodo": 5,
+        "tipo": "Transferencia",
+        "descripcion": "Transferencia bancaria"
+      }
+    }
+  },
+  {
+    "id_pedido": 6,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "pagado",
+    "cliente": {
+      "id_cliente": 6,
+      "nombre_completo": "Sofia Castro",
+      "email": "sofia.castro@gmail.com",
+      "telefono": "956789012"
+    },
+    "items": [
+      {
+        "id_detalle": 10,
+        "producto": {
+          "id_producto": 10,
+          "nombre": "Insulina",
+          "categoria": {
+            "id_categoria": 9,
+            "nombre": "Diabetes"
+          },
+          "proveedor": {
+            "id_proveedor": 10,
+            "nombre": "Andes Salud",
+            "ruc": "20777888999"
+          }
+        },
+        "cantidad": 1,
+        "precio_unitario": 45.00,
+        "subtotal": 45.00
+      },
+      {
+        "id_detalle": 11,
+        "producto": {
+          "id_producto": 11,
+          "nombre": "Aspirina",
+          "categoria": {
+            "id_categoria": 1,
+            "nombre": "Analgésicos"
+          },
+          "proveedor": {
+            "id_proveedor": 2,
+            "nombre": "Laboratorios Medix",
+            "ruc": "20456789123"
+          }
+        },
+        "cantidad": 2,
+        "precio_unitario": 6.00,
+        "subtotal": 12.00
+      }
+    ],
+    "total_calculado": 57.0,
+    "pago": {
+      "id_pago": 6,
+      "monto": 35.00,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 1,
+        "tipo": "Efectivo",
+        "descripcion": "Pago contra entrega"
+      }
+    }
+  },
+  {
+    "id_pedido": 7,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "enviado",
+    "cliente": {
+      "id_cliente": 7,
+      "nombre_completo": "Diego Vargas",
+      "email": "diego.vargas@gmail.com",
+      "telefono": "967890123"
+    },
+    "items": {
+      "id_detalle": 12,
+      "producto": {
+        "id_producto": 12,
+        "nombre": "Gel antibacterial",
+        "categoria": {
+          "id_categoria": 4,
+          "nombre": "Desinfectantes"
+        },
+        "proveedor": {
+          "id_proveedor": 1,
+          "nombre": "Farmindustria S.A.",
+          "ruc": "20123456789"
+        }
+      },
+      "cantidad": 3,
+      "precio_unitario": 3.50,
+      "subtotal": 10.50
+    },
+    "total_calculado": 10.5,
+    "pago": {
+      "id_pago": 7,
+      "monto": 15.90,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 2,
+        "tipo": "Tarjeta",
+        "descripcion": "Crédito o débito"
+      }
+    }
+  },
+  {
+    "id_pedido": 8,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "entregado",
+    "cliente": {
+      "id_cliente": 8,
+      "nombre_completo": "Lucia Rojas",
+      "email": "lucia.rojas@gmail.com",
+      "telefono": "978901234"
+    },
+    "items": {
+      "id_detalle": 13,
+      "producto": {
+        "id_producto": 13,
+        "nombre": "Omeprazol 20mg",
+        "categoria": {
+          "id_categoria": 2,
+          "nombre": "Antibióticos"
+        },
+        "proveedor": {
+          "id_proveedor": 3,
+          "nombre": "SaludPharma SAC",
+          "ruc": "20567891234"
+        }
+      },
+      "cantidad": 1,
+      "precio_unitario": 9.30,
+      "subtotal": 9.30
+    },
+    "total_calculado": 9.3,
+    "pago": {
+      "id_pago": 8,
+      "monto": 80.00,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 3,
+        "tipo": "Yape",
+        "descripcion": "Pago móvil"
+      }
+    }
+  },
+  {
+    "id_pedido": 9,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "pendiente",
+    "cliente": {
+      "id_cliente": 9,
+      "nombre_completo": "Pedro Diaz",
+      "email": "pedro.diaz@gmail.com",
+      "telefono": "989012345"
+    },
+    "items": {
+      "id_detalle": 14,
+      "producto": {
+        "id_producto": 14,
+        "nombre": "Agua oxigenada",
+        "categoria": {
+          "id_categoria": 4,
+          "nombre": "Desinfectantes"
+        },
+        "proveedor": {
+          "id_proveedor": 5,
+          "nombre": "Distribuidora FarmaPlus",
+          "ruc": "20789123456"
+        }
+      },
+      "cantidad": 2,
+      "precio_unitario": 3.20,
+      "subtotal": 6.40
+    },
+    "total_calculado": 6.4,
+    "pago": {
+      "id_pago": 9,
+      "monto": 12.50,
+      "estado": "pendiente",
+      "metodo": {
+        "id_metodo": 4,
+        "tipo": "Plin",
+        "descripcion": "Pago móvil"
+      }
+    }
+  },
+  {
+    "id_pedido": 10,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "pagado",
+    "cliente": {
+      "id_cliente": 10,
+      "nombre_completo": "Valeria Mendoza",
+      "email": "valeria.mendoza@gmail.com",
+      "telefono": "990123456"
+    },
+    "items": {
+      "id_detalle": 15,
+      "producto": {
+        "id_producto": 15,
+        "nombre": "Glucosa en tabletas",
+        "categoria": {
+          "id_categoria": 5,
+          "nombre": "Vitaminas"
+        },
+        "proveedor": {
+          "id_proveedor": 6,
+          "nombre": "Quimica Andina",
+          "ruc": "20891234567"
+        }
+      },
+      "cantidad": 1,
+      "precio_unitario": 4.80,
+      "subtotal": 4.80
+    },
+    "total_calculado": 4.8,
+    "pago": {
+      "id_pago": 10,
+      "monto": 55.00,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 5,
+        "tipo": "Transferencia",
+        "descripcion": "Transferencia bancaria"
+      }
+    }
+  },
+  {
+    "id_pedido": 11,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "enviado",
+    "cliente": {
+      "id_cliente": 11,
+      "nombre_completo": "Andres Silva",
+      "email": "andres.silva@gmail.com",
+      "telefono": "901234567"
+    },
+    "items": {
+      "id_detalle": 16,
+      "producto": {
+        "id_producto": 1,
+        "nombre": "Paracetamol 500mg",
+        "categoria": {
+          "id_categoria": 1,
+          "nombre": "Analgésicos"
+        },
+        "proveedor": {
+          "id_proveedor": 1,
+          "nombre": "Farmindustria S.A.",
+          "ruc": "20123456789"
+        }
+      },
+      "cantidad": 1,
+      "precio_unitario": 5.50,
+      "subtotal": 5.50
+    },
+    "total_calculado": 5.5,
+    "pago": {
+      "id_pago": 11,
+      "monto": 20.00,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 1,
+        "tipo": "Efectivo",
+        "descripcion": "Pago contra entrega"
+      }
+    }
+  },
+  {
+    "id_pedido": 12,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "entregado",
+    "cliente": {
+      "id_cliente": 12,
+      "nombre_completo": "Camila Reyes",
+      "email": "camila.reyes@gmail.com",
+      "telefono": "912398765"
+    },
+    "items": {
+      "id_detalle": 17,
+      "producto": {
+        "id_producto": 2,
+        "nombre": "Ibuprofeno 400mg",
+        "categoria": {
+          "id_categoria": 1,
+          "nombre": "Analgésicos"
+        },
+        "proveedor": {
+          "id_proveedor": 2,
+          "nombre": "Laboratorios Medix",
+          "ruc": "20456789123"
+        }
+      },
+      "cantidad": 2,
+      "precio_unitario": 7.80,
+      "subtotal": 15.60
+    },
+    "total_calculado": 15.6,
+    "pago": {
+      "id_pago": 12,
+      "monto": 45.60,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 2,
+        "tipo": "Tarjeta",
+        "descripcion": "Crédito o débito"
+      }
+    }
+  },
+  {
+    "id_pedido": 13,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "pendiente",
+    "cliente": {
+      "id_cliente": 13,
+      "nombre_completo": "Jorge Navarro",
+      "email": "jorge.navarro@gmail.com",
+      "telefono": "923487654"
+    },
+    "items": {
+      "id_detalle": 18,
+      "producto": {
+        "id_producto": 3,
+        "nombre": "Amoxicilina 500mg",
+        "categoria": {
+          "id_categoria": 2,
+          "nombre": "Antibióticos"
+        },
+        "proveedor": {
+          "id_proveedor": 3,
+          "nombre": "SaludPharma SAC",
+          "ruc": "20567891234"
+        }
+      },
+      "cantidad": 1,
+      "precio_unitario": 12.50,
+      "subtotal": 12.50
+    },
+    "total_calculado": 12.5,
+    "pago": {
+      "id_pago": 13,
+      "monto": 30.20,
+      "estado": "pendiente",
+      "metodo": {
+        "id_metodo": 3,
+        "tipo": "Yape",
+        "descripcion": "Pago móvil"
+      }
+    }
+  },
+  {
+    "id_pedido": 14,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "pagado",
+    "cliente": {
+      "id_cliente": 14,
+      "nombre_completo": "Fernanda Paredes",
+      "email": "fernanda.paredes@gmail.com",
+      "telefono": "934576543"
+    },
+    "items": {
+      "id_detalle": 19,
+      "producto": {
+        "id_producto": 4,
+        "nombre": "Jarabe para la tos",
+        "categoria": {
+          "id_categoria": 3,
+          "nombre": "Jarabes"
+        },
+        "proveedor": {
+          "id_proveedor": 4,
+          "nombre": "BioMedic Perú",
+          "ruc": "20678912345"
+        }
+      },
+      "cantidad": 1,
+      "precio_unitario": 9.90,
+      "subtotal": 9.90
+    },
+    "total_calculado": 9.9,
+    "pago": {
+      "id_pago": 14,
+      "monto": 27.80,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 4,
+        "tipo": "Plin",
+        "descripcion": "Pago móvil"
+      }
+    }
+  },
+  {
+    "id_pedido": 15,
+    "fecha": {
+      "$date": "2026-05-02T02:29:01.000Z"
+    },
+    "estado": "entregado",
+    "cliente": {
+      "id_cliente": 15,
+      "nombre_completo": "Ricardo Salazar",
+      "email": "ricardo.salazar@gmail.com",
+      "telefono": "945665432"
+    },
+    "items": {
+      "id_detalle": 20,
+      "producto": {
+        "id_producto": 5,
+        "nombre": "Alcohol 70%",
+        "categoria": {
+          "id_categoria": 4,
+          "nombre": "Desinfectantes"
+        },
+        "proveedor": {
+          "id_proveedor": 5,
+          "nombre": "Distribuidora FarmaPlus",
+          "ruc": "20789123456"
+        }
+      },
+      "cantidad": 2,
+      "precio_unitario": 4.00,
+      "subtotal": 8.00
+    },
+    "total_calculado": 8.0,
+    "pago": {
+      "id_pago": 15,
+      "monto": 90.00,
+      "estado": "completado",
+      "metodo": {
+        "id_metodo": 5,
+        "tipo": "Transferencia",
+        "descripcion": "Transferencia bancaria"
+      }
+    }
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "id_publicacion": 1,
+    "fecha": {
+      "$date": "2026-06-13T00:00:00.000Z"
+    },
+    "texto": "Me funciono muy bien el Paracetamol para controlar el dolor. Buena atencion y entrega rapida.",
+    "autor": {
+      "id_cliente": 1,
+      "nombre_completo": "Juan Perez",
+      "email": "juan.perez@gmail.com"
+    },
+    "producto": {
+      "id_producto": 1,
+      "nombre": "Paracetamol 500mg",
+      "categoria": {
+        "id_categoria": 1,
+        "nombre": "Analgésicos"
+      }
+    },
+    "metricas": {
+      "likes": 8,
+      "compartidos": 1
+    }
+  },
+  {
+    "id_publicacion": 2,
+    "fecha": {
+      "$date": "2026-06-13T00:00:00.000Z"
+    },
+    "texto": "Hoy compre productos basicos para el botiquin de casa. Me gusto encontrar todo en un solo lugar.",
+    "autor": {
+      "id_cliente": 4,
+      "nombre_completo": "Ana Torres",
+      "email": "ana.torres@gmail.com"
+    },
+    "producto": null,
+    "metricas": {
+      "likes": 11,
+      "compartidos": 2
+    }
+  },
+  {
+    "id_publicacion": 3,
+    "fecha": {
+      "$date": "2026-06-13T00:00:00.000Z"
+    },
+    "texto": "El termometro digital fue facil de usar y llego en buen estado.",
+    "autor": {
+      "id_cliente": 7,
+      "nombre_completo": "Diego Vargas",
+      "email": "diego.vargas@gmail.com"
+    },
+    "producto": {
+      "id_producto": 7,
+      "nombre": "Termómetro digital",
+      "categoria": {
+        "id_categoria": 6,
+        "nombre": "Equipos médicos"
+      }
+    },
+    "metricas": {
+      "likes": 6,
+      "compartidos": 0
+    }
+  },
+  {
+    "id_publicacion": 4,
+    "fecha": {
+      "$date": "2026-06-13T00:00:00.000Z"
+    },
+    "texto": "Seria genial que agreguen recordatorios para productos de uso frecuente.",
+    "autor": {
+      "id_cliente": 10,
+      "nombre_completo": "Valeria Mendoza",
+      "email": "valeria.mendoza@gmail.com"
+    },
+    "producto": {
+      "id_producto": 10,
+      "nombre": "Insulina",
+      "categoria": {
+        "id_categoria": 9,
+        "nombre": "Diabetes"
+      }
+    },
+    "metricas": {
+      "likes": 14,
+      "compartidos": 3
+    }
+  },
+  {
+    "id_publicacion": 5,
+    "fecha": {
+      "$date": "2026-06-13T00:00:00.000Z"
+    },
+    "texto": "Recomiendo tener gel antibacterial en la mochila, especialmente para viajes cortos.",
+    "autor": {
+      "id_cliente": 12,
+      "nombre_completo": "Camila Reyes",
+      "email": "camila.reyes@gmail.com"
+    },
+    "producto": {
+      "id_producto": 12,
+      "nombre": "Gel antibacterial",
+      "categoria": {
+        "id_categoria": 4,
+        "nombre": "Desinfectantes"
+      }
+    },
+    "metricas": {
+      "likes": 9,
+      "compartidos": 1
+    }
+  }
+]

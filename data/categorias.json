@@ -1,0 +1,52 @@
+[
+  {
+    "id_categoria": 1,
+    "nombre": "Analgésicos",
+    "descripcion": "Medicamentos para el dolor"
+  },
+  {
+    "id_categoria": 2,
+    "nombre": "Antibióticos",
+    "descripcion": "Tratamiento de infecciones"
+  },
+  {
+    "id_categoria": 3,
+    "nombre": "Jarabes",
+    "descripcion": "Medicamentos líquidos"
+  },
+  {
+    "id_categoria": 4,
+    "nombre": "Desinfectantes",
+    "descripcion": "Productos de limpieza y antisepsia"
+  },
+  {
+    "id_categoria": 5,
+    "nombre": "Vitaminas",
+    "descripcion": "Suplementos nutricionales"
+  },
+  {
+    "id_categoria": 6,
+    "nombre": "Equipos médicos",
+    "descripcion": "Dispositivos de salud"
+  },
+  {
+    "id_categoria": 7,
+    "nombre": "Higiene oral",
+    "descripcion": "Productos para cuidado bucal"
+  },
+  {
+    "id_categoria": 8,
+    "nombre": "Dermatológicos",
+    "descripcion": "Cuidado de la piel"
+  },
+  {
+    "id_categoria": 9,
+    "nombre": "Diabetes",
+    "descripcion": "Tratamiento para diabetes"
+  },
+  {
+    "id_categoria": 10,
+    "nombre": "Otros",
+    "descripcion": "Productos varios"
+  }
+]

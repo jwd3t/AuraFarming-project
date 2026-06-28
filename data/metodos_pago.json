@@ -1,0 +1,27 @@
+[
+  {
+    "id_metodo": 1,
+    "tipo": "Efectivo",
+    "descripcion": "Pago contra entrega"
+  },
+  {
+    "id_metodo": 2,
+    "tipo": "Tarjeta",
+    "descripcion": "Crédito o débito"
+  },
+  {
+    "id_metodo": 3,
+    "tipo": "Yape",
+    "descripcion": "Pago móvil"
+  },
+  {
+    "id_metodo": 4,
+    "tipo": "Plin",
+    "descripcion": "Pago móvil"
+  },
+  {
+    "id_metodo": 5,
+    "tipo": "Transferencia",
+    "descripcion": "Transferencia bancaria"
+  }
+]

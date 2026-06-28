@@ -1,0 +1,62 @@
+[
+  {
+    "id_proveedor": 1,
+    "nombre": "Farmindustria S.A.",
+    "contacto": "contacto@farmindustria.com",
+    "ruc": "20123456789"
+  },
+  {
+    "id_proveedor": 2,
+    "nombre": "Laboratorios Medix",
+    "contacto": "ventas@medix.com",
+    "ruc": "20456789123"
+  },
+  {
+    "id_proveedor": 3,
+    "nombre": "SaludPharma SAC",
+    "contacto": "info@saludpharma.com",
+    "ruc": "20567891234"
+  },
+  {
+    "id_proveedor": 4,
+    "nombre": "BioMedic Perú",
+    "contacto": "soporte@biomedic.pe",
+    "ruc": "20678912345"
+  },
+  {
+    "id_proveedor": 5,
+    "nombre": "Distribuidora FarmaPlus",
+    "contacto": "ventas@farmaplus.pe",
+    "ruc": "20789123456"
+  },
+  {
+    "id_proveedor": 6,
+    "nombre": "Quimica Andina",
+    "contacto": "contacto@quimicaandina.pe",
+    "ruc": "20891234567"
+  },
+  {
+    "id_proveedor": 7,
+    "nombre": "MedSupply Perú",
+    "contacto": "info@medsupply.pe",
+    "ruc": "20912345678"
+  },
+  {
+    "id_proveedor": 8,
+    "nombre": "PharmaLife",
+    "contacto": "ventas@pharmalife.pe",
+    "ruc": "20111222333"
+  },
+  {
+    "id_proveedor": 9,
+    "nombre": "Global Farma",
+    "contacto": "contacto@globalfarma.com",
+    "ruc": "20444555666"
+  },
+  {
+    "id_proveedor": 10,
+    "nombre": "Andes Salud",
+    "contacto": "soporte@andessalud.pe",
+    "ruc": "20777888999"
+  }
+]

@@ -1,0 +1,347 @@
+[
+  {
+    "id_producto": 1,
+    "nombre": "Paracetamol 500mg",
+    "descripcion": "Analgésico y antipirético",
+    "precio": 7.77,
+    "stock_csv": 5,
+    "categoria": {
+      "id_categoria": 1,
+      "nombre": "Analgésicos"
+    },
+    "proveedor": {
+      "id_proveedor": 1,
+      "nombre": "Farmindustria S.A.",
+      "ruc": "20123456789"
+    },
+    "inventario": {
+      "id_inventario": 1,
+      "stock": 100,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 2,
+    "nombre": "Ibuprofeno 400mg",
+    "descripcion": "Antiinflamatorio",
+    "precio": 7.80,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 1,
+      "nombre": "Analgésicos"
+    },
+    "proveedor": {
+      "id_proveedor": 2,
+      "nombre": "Laboratorios Medix",
+      "ruc": "20456789123"
+    },
+    "inventario": {
+      "id_inventario": 2,
+      "stock": 80,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 3,
+    "nombre": "Amoxicilina 500mg",
+    "descripcion": "Antibiótico de amplio espectro",
+    "precio": 12.50,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 2,
+      "nombre": "Antibióticos"
+    },
+    "proveedor": {
+      "id_proveedor": 3,
+      "nombre": "SaludPharma SAC",
+      "ruc": "20567891234"
+    },
+    "inventario": {
+      "id_inventario": 3,
+      "stock": 50,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 4,
+    "nombre": "Jarabe para la tos",
+    "descripcion": "Alivio para tos seca y productiva",
+    "precio": 9.90,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 3,
+      "nombre": "Jarabes"
+    },
+    "proveedor": {
+      "id_proveedor": 4,
+      "nombre": "BioMedic Perú",
+      "ruc": "20678912345"
+    },
+    "inventario": {
+      "id_inventario": 4,
+      "stock": 60,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 5,
+    "nombre": "Alcohol 70%",
+    "descripcion": "Desinfectante líquido",
+    "precio": 4.00,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 4,
+      "nombre": "Desinfectantes"
+    },
+    "proveedor": {
+      "id_proveedor": 5,
+      "nombre": "Distribuidora FarmaPlus",
+      "ruc": "20789123456"
+    },
+    "inventario": {
+      "id_inventario": 5,
+      "stock": 120,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 6,
+    "nombre": "Vitamina C 1g",
+    "descripcion": "Refuerza el sistema inmunológico",
+    "precio": 6.50,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 5,
+      "nombre": "Vitaminas"
+    },
+    "proveedor": {
+      "id_proveedor": 6,
+      "nombre": "Quimica Andina",
+      "ruc": "20891234567"
+    },
+    "inventario": {
+      "id_inventario": 6,
+      "stock": 90,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 7,
+    "nombre": "Termómetro digital",
+    "descripcion": "Medición precisa de temperatura",
+    "precio": 25.00,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 6,
+      "nombre": "Equipos médicos"
+    },
+    "proveedor": {
+      "id_proveedor": 7,
+      "nombre": "MedSupply Perú",
+      "ruc": "20912345678"
+    },
+    "inventario": {
+      "id_inventario": 7,
+      "stock": 30,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 8,
+    "nombre": "Enjuague bucal",
+    "descripcion": "Higiene oral y protección",
+    "precio": 11.20,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 7,
+      "nombre": "Higiene oral"
+    },
+    "proveedor": {
+      "id_proveedor": 8,
+      "nombre": "PharmaLife",
+      "ruc": "20111222333"
+    },
+    "inventario": {
+      "id_inventario": 8,
+      "stock": 70,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 9,
+    "nombre": "Crema antibacterial",
+    "descripcion": "Uso tópico para infecciones leves",
+    "precio": 8.70,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 8,
+      "nombre": "Dermatológicos"
+    },
+    "proveedor": {
+      "id_proveedor": 9,
+      "nombre": "Global Farma",
+      "ruc": "20444555666"
+    },
+    "inventario": {
+      "id_inventario": 9,
+      "stock": 40,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 10,
+    "nombre": "Insulina",
+    "descripcion": "Control de glucosa en sangre",
+    "precio": 45.00,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 9,
+      "nombre": "Diabetes"
+    },
+    "proveedor": {
+      "id_proveedor": 10,
+      "nombre": "Andes Salud",
+      "ruc": "20777888999"
+    },
+    "inventario": {
+      "id_inventario": 10,
+      "stock": 20,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 11,
+    "nombre": "Aspirina",
+    "descripcion": "Analgésico y antiinflamatorio",
+    "precio": 6.00,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 1,
+      "nombre": "Analgésicos"
+    },
+    "proveedor": {
+      "id_proveedor": 2,
+      "nombre": "Laboratorios Medix",
+      "ruc": "20456789123"
+    },
+    "inventario": {
+      "id_inventario": 11,
+      "stock": 85,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 12,
+    "nombre": "Gel antibacterial",
+    "descripcion": "Desinfección de manos",
+    "precio": 3.50,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 4,
+      "nombre": "Desinfectantes"
+    },
+    "proveedor": {
+      "id_proveedor": 1,
+      "nombre": "Farmindustria S.A.",
+      "ruc": "20123456789"
+    },
+    "inventario": {
+      "id_inventario": 12,
+      "stock": 110,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 13,
+    "nombre": "Omeprazol 20mg",
+    "descripcion": "Protector gástrico",
+    "precio": 9.30,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 2,
+      "nombre": "Antibióticos"
+    },
+    "proveedor": {
+      "id_proveedor": 3,
+      "nombre": "SaludPharma SAC",
+      "ruc": "20567891234"
+    },
+    "inventario": {
+      "id_inventario": 13,
+      "stock": 65,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 14,
+    "nombre": "Agua oxigenada",
+    "descripcion": "Antiséptico",
+    "precio": 3.20,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 4,
+      "nombre": "Desinfectantes"
+    },
+    "proveedor": {
+      "id_proveedor": 5,
+      "nombre": "Distribuidora FarmaPlus",
+      "ruc": "20789123456"
+    },
+    "inventario": {
+      "id_inventario": 14,
+      "stock": 95,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  },
+  {
+    "id_producto": 15,
+    "nombre": "Glucosa en tabletas",
+    "descripcion": "Aporte rápido de energía",
+    "precio": 4.80,
+    "stock_csv": 10,
+    "categoria": {
+      "id_categoria": 5,
+      "nombre": "Vitaminas"
+    },
+    "proveedor": {
+      "id_proveedor": 6,
+      "nombre": "Quimica Andina",
+      "ruc": "20891234567"
+    },
+    "inventario": {
+      "id_inventario": 15,
+      "stock": 75,
+      "fecha_actualizacion": {
+        "$date": "2026-05-02T02:26:50.000Z"
+      }
+    }
+  }
+]
