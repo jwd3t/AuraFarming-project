@@ -67,6 +67,49 @@ test("GET /clientes/:id devuelve un cliente existente", async () => {
     assert.equal(response.body._id, sampleClient._id);
     assert.equal(response.body.id_cliente, sampleClient.id_cliente);
     assert.equal(response.body.nombre_completo, sampleClient.nombre_completo);
+    assert.equal(response.body.direcciones.id_direccion, sampleClient.direcciones.id_direccion);
+});
+
+test("GET /productos devuelve referencias anidadas con _id de MongoDB", async () => {
+    const response = await request("/productos");
+    const producto = response.body[0];
+
+    assert.equal(response.status, 200);
+    assert.equal(producto.id_producto, 1);
+    assert.equal(producto.categoria.id_categoria, 1);
+    assert.equal(producto.proveedor.id_proveedor, 1);
+    assert.equal(producto.inventario.id_inventario, 1);
+});
+
+test("GET /pedidos devuelve items normalizados y referencias anidadas con _id", async () => {
+    const response = await request("/pedidos");
+    const pedido = response.body[0];
+    const item = pedido.items[0];
+
+    assert.equal(response.status, 200);
+    assert.ok(Array.isArray(pedido.items));
+    assert.equal(pedido.id_pedido, 1);
+    assert.equal(pedido.cliente.id_cliente, 1);
+    assert.equal(item.id_detalle, 1);
+    assert.equal(item.producto.id_producto, 1);
+    assert.equal(item.producto.categoria.id_categoria, 1);
+    assert.equal(item.producto.proveedor.id_proveedor, 1);
+    assert.equal(pedido.pago.id_pago, 1);
+    assert.equal(pedido.pago.metodo.id_metodo, 1);
+});
+
+test("GET /publicaciones devuelve autor y producto referenciados con _id", async () => {
+    const response = await request("/publicaciones");
+    const publicacion = response.body.find((item) => item.producto) || response.body[0];
+
+    assert.equal(response.status, 200);
+    assert.equal(publicacion.id_publicacion, 1);
+    assert.equal(publicacion.autor.id_cliente, 1);
+
+    if (publicacion.producto) {
+        assert.equal(publicacion.producto.id_producto, 1);
+        assert.equal(publicacion.producto.categoria.id_categoria, 1);
+    }
 });
 
 test("PUT parcial se rechaza y no reemplaza el documento", async () => {
@@ -131,8 +174,8 @@ test("POST incompleto se rechaza", async () => {
     const response = await request("/clientes", {
         method: "POST",
         body: JSON.stringify({
-            id_cliente: 999,
-            nombre: "Temporal"
+            nombre: "Temporal",
+            apellido: "Prueba"
         })
     });
 
@@ -141,7 +184,7 @@ test("POST incompleto se rechaza", async () => {
         response.body.message,
         "Para POST y PUT debes enviar el documento completo de la coleccion"
     );
-    assert.ok(response.body.details.missingFields.includes("apellido"));
+    assert.ok(response.body.details.missingFields.includes("email"));
 });
 
 test("DELETE de un id inexistente responde 404", async () => {

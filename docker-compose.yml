@@ -2,7 +2,7 @@ version: '3'
 
 services:
   webapp: 
-    container_name: container_app
+    container_name: aurafarma_app
     restart: always
     build: .
     ports:
@@ -10,7 +10,7 @@ services:
     links:
       - database
   database:
-    container_name: contenedor_db
+    container_name: aurafarma_db
     image: mongo
     restart: always
     build: .

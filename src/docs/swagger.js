@@ -10,7 +10,8 @@ function registerSwagger(app) {
         res.json(spec);
     });
 
-    app.use("/swagger", swaggerUi.serve, swaggerUi.setup(spec));
+    registerSwaggerUi(app, "/api-docs", spec);
+    registerSwaggerUi(app, "/swagger", spec);
 }
 
 function buildOpenApiSpec() {
@@ -321,6 +322,10 @@ function convertFieldDefinition(definition) {
         return { type: "string", format: "date-time" };
     }
 
+    if (definition.type === mongoose.Schema.Types.ObjectId) {
+        return { type: "string", example: "6a4053e2de2d7277b667ba9f" };
+    }
+
     if (definition.type === Object) {
         return { type: "object", additionalProperties: true };
     }
@@ -357,6 +362,12 @@ function toSchemaName(collectionName) {
 
 function clone(value) {
     return JSON.parse(JSON.stringify(value));
+}
+
+function registerSwaggerUi(app, route, spec) {
+    app.use(route, swaggerUi.serveFiles(spec));
+    app.get(route, swaggerUi.setup(spec));
+    app.get(`${route}/index.html`, swaggerUi.setup(spec));
 }
 
 module.exports = {
