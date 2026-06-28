@@ -1,27 +1,25 @@
 const express = require("express");
+const { registerSwagger } = require("./docs/swagger");
 
-//generar app web
 const app = express();
-
-app.get("/", (req, res) => {
-    res.send("Sistemas Operativos desde NodeJS 67");
-});
-
-
-//Conexxion con la base de datos
 require("./database.js");
 
 app.use(express.json());
+registerSwagger(app);
 
 app.use(require("./routes/index.routes.js"));
 
-app.use(require("./userModel.js"));
+app.get("/", (req, res) => {
+    res.send("AuraFarma API");
+});
 
-//Definimos el puerto del servicio web
-app.listen(3000);
+const PORT = process.env.PORT || 3000;
 
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Server en el puerto ${PORT}`);
+    });
+}
 
-
-
-console.log("Server en el puerto 3000")
+module.exports = app;
 
